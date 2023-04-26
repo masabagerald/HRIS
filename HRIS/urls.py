@@ -16,13 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-   # path('leave_management/', include('leave_management.urls')),
-    path('leave_management/', include('leave_management.urls')),
-
-    path('appraisal/', include('appraisal.urls')),
-    path('timesheet_attendance/', include('timesheet_attendance.urls')),
-    path('employee_management/', include('employee_management.urls')),
+ 
 ]
